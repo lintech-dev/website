@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Lintechnokrats</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="Lintechnokrats-Logo.png" rel="icon">
+  <link href="Lintechnokrats-Logo.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Selecao
+  * Template URL: https://bootstrapmade.com/selecao-bootstrap-template/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  
+  
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+<style>
+/* Slider */
+
+.slick-slide {
+    margin: 0px 20px;
+}
+
+.slick-slide img {
+    width: 100%;
+}
+
+.slick-slider
+{
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+            user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list
+{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+
+.slick-slide
+{
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+    display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+</style>
+<script>
+var j = jQuery.noConflict();
+j(document).ready(function(){
+    j('.customer-logos').slick({
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1500,
+        arrows: false,
+        dots: false,
+        pauseOnHover: false,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 4
+            }
+        }, {
+            breakpoint: 520,
+            settings: {
+                slidesToShow: 3
+            }
+        }]
+    });
+});
+</script>
+
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img src="Lintechnokrats-Logo.png" alt="">
+        <h1 class="sitename">Lintechnokrats</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#CT">Clients & Testimonial</a></li>
+          <li><a href="#support">Support</a></li>
+          
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <div id="hero-carousel" data-bs-interval="5000" class="container carousel carousel-fade" data-bs-ride="carousel">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <div class="carousel-container">
+            <h2 class="animate__animated animate__fadeInDown">Opensource Technology Services</h2>
+            <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <div class="carousel-container">
+            <h2 class="animate__animated animate__fadeInDown">Technical Consulting & Web Development Services Company</h2>
+            <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+          </div>
+        </div>
+		
+		<div class="carousel-item">
+          <div class="carousel-container">
+            <h2 class="animate__animated animate__fadeInDown">Linux. Built for the Future</h2>
+           <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+          </div>
+        </div>
+		
+		<div class="carousel-item">
+          <div class="carousel-container">
+            <h2 class="animate__animated animate__fadeInDown">Your Ideas, Our Expertise</h2>
+           <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+          </div>
+        </div>
+		
+		<div class="carousel-item">
+          <div class="carousel-container">
+            <h2 class="animate__animated animate__fadeInDown">Web Development, Reimagined</h2>
+            <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+          </div>
+        </div>
+		
+		<div class="carousel-item">
+          <div class="carousel-container">
+            <h2 class="animate__animated animate__fadeInDown">Power Your Projects with Linux</h2>
+            <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-item">
+          <div class="carousel-container">
+            <h2 class="animate__animated animate__fadeInDown">Linux: The Foundation of Your Success</h2>
+            <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+          </div>
+        </div>
+		
+		<div class="carousel-item">
+          <div class="carousel-container">
+            <h2 class="animate__animated animate__fadeInDown">Open Source. Open Possibilities</h2>
+            <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+          </div>
+        </div>
+		
+		<div class="carousel-item">
+          <div class="carousel-container">
+            <h2 class="animate__animated animate__fadeInDown">PHP. Laravel. Power Your Web</h2>
+            <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+          </div>
+        </div>
+		
+		<div class="carousel-item">
+          <div class="carousel-container">
+            <h2 class="animate__animated animate__fadeInDown">Your Web, Built with PHP and Laravel</h2>
+            <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+          </div>
+        </div>
+		
+		
+
+        <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+        </a>
+
+        <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+        </a>
+
+      </div>
+
+      <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
+        <defs>
+          <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+        </defs>
+        <g class="wave1">
+          <use xlink:href="#wave-path" x="50" y="3"></use>
+        </g>
+        <g class="wave2">
+          <use xlink:href="#wave-path" x="50" y="0"></use>
+        </g>
+        <g class="wave3">
+          <use xlink:href="#wave-path" x="50" y="9"></use>
+        </g>
+      </svg>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About</h2>
+        <p>Who we are</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
+            <p>
+              Founded in 2002, Lintechnokrats remains committed to delivering expert IT support services and web application development to organizations by leveraging Open Source technologies. Today, we continue to understand and address the comprehensive IT support, development, and web application needs of our clients, ensuring that our solutions are both technically sound and cost-effective. Our unwavering dedication to our clients positions us as a trusted technology partner, seamlessly integrating with their IT teams.
+            </p>
+            <p>
+              With years of industry experience, the Lintechnokrats team effectively aligns Open Source technologies with diverse business models, providing a competitive edge in the technology space. Serving clients across various sectors, we offer tailored support and web application development options to meet their specific needs. Our knowledge, experience, and access to the latest technological advancements ensure we remain a reliable and valuable partner for our customers.
+            </p>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <p>Our mission is to collaborate with our clients in developing solutions and support strategies that effectively and efficiently meet their business objectives, while ensuring practicality, sustainability, and a clear return on investment. </p>
+            
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Features Section -->
+   
+
+    <!-- Call To Action Section -->
+    <section id="call-to-action" class="call-to-action section dark-background">
+
+      <div class="container">
+
+        <div class="row" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-xl-9 text-center text-xl-start">
+            <h3>Call To Action</h3>
+            <p>Need Reliable Linux Support? Let’s Optimize Your Systems – Get in Touch Now!</p>
+          </div>
+          <div class="col-xl-3 cta-btn-container text-center">
+            <a class="cta-btn align-middle" href="#contact">Call To Action</a>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Call To Action Section -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Services</h2>
+        <p>What we do offer</p>
+      </div><!-- End Section Title -->
+
+     <!-- <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item  position-relative">
+              <div class="icon">
+                <i class="bi bi-calendar4-week" style="color: #fd7e14;"></i>
+              </div>
+              
+			   <ul>
+                  <li><span>Onsite & Remote Infrastucture Administration</span></li>
+                  <li><span>Clustering - OS / Application</span></li>
+				  <li><span>Infrastructure Security</span></li>
+				  <li><span>Network Security Solution</span></li>
+				  <li><span>System & Application Monitoring</span></li>
+				  <li><span>Enterprise Email Solutions</span></li>
+				  <li><span>IT Life Cycle Management</span></li>
+				  <li><span>Cloud Consulting</span></li>
+				</ul>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-clock" style="color: #fd7e14;"></i>
+              </div>
+              <ul>
+                  <li><span>Web Application Development</span>.</li>
+                  <li><span>Custom Web App Development</span></li>
+				  <li><span>Hybrid Web App Development</span></li>
+				  <li><span>Web Software Migration / Reengineering</span></li>
+				  <li><span>Web Software Testing / QA Services</span></li>
+				  <li><span>Content Management System</span></li>
+				  <li><span>Enterprise Portal Development</span></li>
+				</ul>
+            </div>
+          </div>
+		  
+		  <div class="col-lg-12 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-globe" style="color: #fd7e14;"></i>
+              </div>
+			  <h2>Web Development</h2>
+			  <h3>LAMP Stack and Laravel: Your Web Development Powerhouse</h3>
+              <p>The LAMP stack (Linux, Apache, MySQL, PHP) provides a robust foundation for web applications, while Laravel offers a modern, expressive framework that simplifies development and enhances performance. Our experts leverage this powerful combination to deliver scalable, secure, and feature-rich web applications tailored to your unique needs.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>-->
+	  
+	  <br>
+	  
+	   <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item  position-relative">
+			<div class="icon">
+               <img src="icon/Tux.png" class="bi bi-credit-card-2-front" style="width: 60px;">
+              </div>
+			
+		      <a href="service-details.html" class="stretched-link">
+                <h3>Linux Technical Support services</h3>
+              </a>
+              
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item position-relative">
+			<div class="icon">
+              <img src="icon/Laravel.png" class="bi bi-credit-card-2-front" style="width: 60px;">
+              </div>
+              <a href="service-details.html" class="stretched-link">
+                <h3>LAMP Stack - PHP Laravel Web Application Development services</h3>
+              </a>
+              
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative">
+			<div class="icon">
+            <img src="icon/299070_shield_icon.png" class="bi bi-credit-card-2-front" style="width: 60px;">
+              </div>
+			  <a href="service-details.html" class="stretched-link">
+                <h3>Web Application Security with a WAF (Web Application Firewall) using Open Source Technologies</h3>
+              </a>
+             
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <img src="icon/network security_lock.png" class="bi bi-credit-card-2-front" style="width: 90px;">
+			</div>
+              <a href="service-details.html" class="stretched-link">
+                <h3>System and Network Security with Open Source Applications</h3>
+              </a>
+              
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <img src="icon/299070_shield_icon.png" style="width: 80px;">
+              </div>
+              <a href="service-details.html" class="stretched-link">
+                <h3>Onsite & Remote Infrastucture Administration</h3>
+              </a>
+             
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-clock" style="color: #f3268c;"></i>
+              </div>
+              <a href="service-details.html" class="stretched-link">
+                <h3>Enterprise Email Solutions</h3>
+              </a>
+              
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+    <!-- Portfolio Section -->
+    <section id="CT" class="portfolio section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Clients & Testimonial</h2>
+        <p>Whom we've worked</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          
+
+          
+
+
+ <section class="customer-logos slider">
+
+      <div class="slide"><img src="./clients/1.png" style="width: 100px;"></div>
+      <div class="slide"><img src="./clients/2.png" style="width: 100px;"></div>
+      <div class="slide"><img src="./clients/3.png" style="width: 100px;"></div>
+      <div class="slide"><img src="./clients/4.png" style="width: 100px;"></div>
+      <div class="slide"><img src="./clients/5.png" style="width: 100px;"></div>
+      <div class="slide"><img src="./clients/6.png" style="width: 100px;"></div>
+      <div class="slide"><img src="./clients/7.png" style="width: 100px;"></div>
+      <div class="slide"><img src="./clients/8.png" style="width: 100px;"></div>
+      <div class="slide"><img src="./clients/9.png" style="width: 100px;"></div>
+      <div class="slide"><img src="./clients/10.png" style="width: 100px;"></div>
+      <div class="slide"><img src="./clients/11.png" style="width: 100px;"></div>
+      <div class="slide"><img src="./clients/12.png" style="width: 100px;"></div>
+      <div class="slide"><img src="./clients/13.png" style="width: 100px;"></div>
+      <div class="slide"><img src="./clients/14.png" style="width: 100px;"></div>
+      <div class="slide"><img src="./clients/15.png" style="width: 100px;"></div>
+   </section>
+
+           
+
+            
+
+           
+
+            
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Section -->
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Testimonials</h2>
+        <p>What they are saying about us</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 1,
+                  "spaceBetween": 40
+                },
+                "1200": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 10
+                }
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <h3>Lokanath A</h3>
+                <h4>Retired Chief Manager Systems <br> State Bank of India</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>I have been closely associated with M/s Lintechnokrats, the OPEN SOURCE EXPERTS, since last 9 years.<br>The team lead by Mr. Anand was my first choice as the IT partner for the various IT projects that I had handled in State Bank of Mysore and in Kaveri Grameena Bank.<br>For any IT requirement, M/s LinTeknokrat will be ready with an Open Source solution, which is simple and highly cost efficient.<br>I appreciate their expertise in open source solutions, innovative approach, their accommodating nature and their skill in implementing the IT solution in minimum time. <br>I recommend M/s LinTeknokrat as a key IT strategic partner for all IT requirements of your business, whether it is large or small.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <h3>Ravi Namboori</h3>
+                <h4>CTO , Co-founder <br> BlackBook Technologies Pte. Ltd.</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>I have engaged the services of Lintechnokrats for over 15 years, across 3 of my companies. From the wide-eyed Linux enthusiasts they were, back in 2004, they have come a long way in expanding their skillset from cloud infrastructure to security solutions, from system monitoring to software QA. Their passion to learn, their humility to serve and their willingness to be around at the wee hours, makes them a considerable asset to any client.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <h3>K.T. Rajan</h3>
+                <h4>Senior Management Consultant at Global MNCs</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Have been associated with Anand and the team for the last couple of decades. I find them to be a bunch of innovative individuals who while excelling in their own sphere of technical expertise, blend together seamlessly and evolve customer-centric solutions. They are open to new ideas, think through a range of options and collaborate well to bring out the best suited resolution for daunting challenges. Their pro-active mindset, which differentiates them from the rest, has led to the team carving an unique pedestal for themselves. Tremendous opportunities are ahead of them and I am sure they are geared to leverage & carve a fabulous future for themselves. My Best Wishes to Anand & Team Lintechnokrats !</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <h3>Karthi V</h3>
+                <h4>Sr. Manager IT <br> Allergan India Pvt Ltd</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>"Our Journey started with Lintechnokrats from 2007 on Mailing Solution and recently supported us for Intranet Portal Development" "They took the time to listen to us about our requirements and our goals for the Intranet Portal which helped to make sure we were giving the best experience while employees visiting our portal. The best part is website is it’s so easy to use, I am able to upload our contents and amendments on our own" <b>I highly recommend them for any critical IT solutions, as we see great transformation from past 11years and look forward to future collaborations.</b></span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <h3>Dr Ramesh K V</h3>
+                <h4>Professor, Department of Biotechnology<br> School of Sciences, Jain University, Bangalore</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>I would like to place on record and appreciate the services rendered by Lintechnokrat led by Mr Anand and his dedicated team members in maintaining the supercomputing facility (SGI work station and computer clusters) at school of sciences, (PG center), Jain University, Bangalore for the last couple of years.  My earlier student Dr Mutangana, while pursuing his doctoral studies (related to computational biology) at our research centre has been largely benefitted from Mr Anand’s expertise in resolving many of the complicated Linux based software related issues. Also, some of our research publications in highly rated journals [such as “Journal of Biomolecular and Structural Dynamics (Impact Factor > 2.75), an international journal” and other national journals] have been made possible due to the timely support extended by Mr Anand and his supporting staff. Looking forward to continue the collaboration with Lintechnokrat in the years to come.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+			
+			<div class="swiper-slide">
+              <div class="testimonial-item">
+                <h3>Dr. Vijay Sathya</h3>
+                <h4>CEO of AVK Systems SA of Switzerland</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>I have known Anand and his team at Lintechnokrats since 2006. The three words I would use to describe my experience with them are: Responsive, Reliable and Reasonable. Lintechnokrats get the job done no matter what is given to them. Their professional approach, courteous demeaner and always available pre-disposition makes them an absolute pleasure to work with.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+			
+			<div class="swiper-slide">
+              <div class="testimonial-item">
+                <h3>Manju.A</h3>
+                <h4>Asst.Commissioner of Income Tax</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>We worked with "LINTECHNOKRATS" for the design and implementation of website for Karnataka and Goa jurisdiction of Income Tax Department.<br>The design and implementation team led by Anand exceeded our expectations with their intuitive designs and simplicity. Anand, Raghu and the team was dedicated and easy to work with. They effectively communicated the process and the progress. Their futurisic thinking and agility to the whole program made it easy for us to be onboard.<br> Overall their sound processes and procedures are extremely professional with an excellent team of developers. I would recommend Lintechnokrats if you are looking for a quality and reliable product.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section><!-- /Testimonials Section -->
+
+    
+
+   
+
+    <!-- Team Section -->
+    <section id="support" class="team section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Support</h2>
+        <p>Our Support Work</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-12">
+
+          <div class="col-lg-12 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+           
+             <p>Lintechnokrats engineers leverage a vast, online knowledge base of Linux support, techniques, and real-world experience accumulated since 2002.
+			 <br>
+			 This unique resource empowers our experts to rapidly deliver effective solutions to your problems. It also provides valuable insights into solution integration and security.
+			 <br>
+			Lintechnokrats offers remote services via email, phone, and secure remote administration. On-site support is available in select regions.
+			 <br>
+			 From routine troubleshooting to complex migrations and new Linux system implementations, we collaborate closely with clients to develop tailored support strategies that align with your business objectives. Our solutions are practical, sustainable, and deliver a clear ROI.</p>
+           
+          </div><!-- End Team Member -->
+
+         
+
+         
+
+          
+
+        </div>
+
+      </div>
+
+    </section><!-- /Team Section -->
+
+   
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p>Contact Us</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4">
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+              <i class="bi bi-geo-alt flex-shrink-0"></i>
+              <div>
+                <h3>Address</h3>
+                <p>#931,18th Main,1st Cross,Ideal Homes Township, Rajarajeshwarinagar,Bangalore -560098,Karnataka, India.</p>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+              <i class="bi bi-telephone flex-shrink-0"></i>
+              <div>
+                <h3>Call Us</h3>
+                <p>+91-9845351190</p>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+              <i class="bi bi-envelope flex-shrink-0"></i>
+              <div>
+                <h3>Email Us</h3>
+                <p>support<b>[at]</b>lintechnokrats<b>[dot]</b>com </p>
+              </div>
+            </div><!-- End Info Item -->
+
+          </div>
+
+          <div class="col-lg-8">
+            <!--<form action="index.html" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">-->
+			<form action="#" method="post" class="php-email-form">
+              <div class="row gy-4">
+
+                <div class="col-md-6">
+                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                </div>
+
+                <div class="col-md-6 ">
+                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+							<a href="javascript:void(0);" style="color: var(--contrast-color);background: var(--accent-color);border: 0;padding: 10px 30px;transition: 0.4s;border-radius: 50px;">Send Message</a>
+                  <!--<button type="submit">Send Message</button>-->
+                </div>
+
+              </div>
+            </form>
+          </div><!-- End Contact Form -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+    <div class="container">
+      <h3 class="sitename">Lintechnokrats</h3>
+      <p>Open Source People</p>
+     
+      <div class="container">
+        <div class="copyright">
+          <span>Copyright</span> <strong class="px-1 sitename">Lintechnokrats</strong> <span>All Rights Reserved</span>
+        </div>
+        
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
