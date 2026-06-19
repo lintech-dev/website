@@ -97,7 +97,8 @@
       duration: 600,
       easing: 'ease-in-out',
       once: true,
-      mirror: false
+      mirror: false,
+      disable: 'mobile'
     });
   }
   window.addEventListener('load', aosInit);
@@ -160,6 +161,70 @@
   }
 
   window.addEventListener("load", initSwiper);
+
+  /**
+   * Testimonial read more — clamp to 15 lines, expand on click
+   */
+  function testimonialNeedsReadMore(textEl) {
+    const width = textEl.offsetWidth || textEl.clientWidth;
+    if (!width) return false;
+
+    const clone = textEl.cloneNode(true);
+    clone.style.cssText = 'position:absolute;visibility:hidden;pointer-events:none;display:block;overflow:visible;width:' + width + 'px;-webkit-line-clamp:unset;line-clamp:unset;min-height:0';
+    textEl.parentNode.appendChild(clone);
+    const fullHeight = clone.offsetHeight;
+    clone.remove();
+
+    const lineHeight = parseFloat(getComputedStyle(textEl).lineHeight) || 24;
+    return fullHeight > lineHeight * 15 + 1;
+  }
+
+  function initTestimonialReadMore() {
+    document.querySelectorAll('.testimonials .testimonial-item').forEach(function(item) {
+      if (item.dataset.readMoreInit) return;
+      item.dataset.readMoreInit = 'true';
+
+      const p = item.querySelector('p');
+      const textSpan = item.querySelector('p > span:not(.testimonial-body)');
+      if (!textSpan || !p) return;
+
+      const leftQuote = p.querySelector('.quote-icon-left');
+      const rightQuote = p.querySelector('.quote-icon-right');
+
+      const body = document.createElement('span');
+      body.className = 'testimonial-body';
+      if (leftQuote) body.appendChild(leftQuote);
+      while (textSpan.firstChild) {
+        body.appendChild(textSpan.firstChild);
+      }
+      if (rightQuote) body.appendChild(rightQuote);
+      textSpan.replaceWith(body);
+
+      const btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = 'testimonial-read-more';
+      btn.textContent = 'Read more';
+      btn.hidden = true;
+      item.appendChild(btn);
+
+      requestAnimationFrame(function() {
+        if (testimonialNeedsReadMore(body)) {
+          btn.hidden = false;
+        }
+      });
+
+      btn.addEventListener('click', function() {
+        const expanded = item.classList.toggle('is-expanded');
+        btn.textContent = expanded ? 'Read less' : 'Read more';
+        const swiperEl = item.closest('.swiper');
+        if (swiperEl && swiperEl.swiper) {
+          swiperEl.swiper.update();
+        }
+      });
+    });
+  }
+
+  window.addEventListener('load', initTestimonialReadMore);
 
   /**
    * Correct scrolling position upon page load for URLs containing hash links.
